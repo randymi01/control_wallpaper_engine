@@ -1,6 +1,6 @@
 {
 	"contentrating" : "Everyone",
-	"description" : "Lightweight wallpaper inspired by the title cards from Remedy's game Control. Background is randomly chosen from a set of my in-game screenshots and standard 4k background images, 22 in total.\n\nFeatures:\n* 12/24 hour display choice\n* Time and Date\n* Weather and Temp\n\n(Changes based on city/country choice. Default is New York, US)\n\nOpenWeather API key is not required but recommended.",
+	"description" : "Lightweight wallpaper inspired by the title cards from Remedy's game Control. Background is randomly chosen from a set of my in-game screenshots and screenshots from the remedy control photobook and user submitted screenshots on reddit, 90 in total.\n\nFeatures:\n* 12/24 hour display choice\n* Time and Date\n* Weather and Temp\n* Audio EQ Visualization\n\n(Changes based on city/country choice. Default is New York, US)\n\nOpenWeather API key is not required but recommended.",
 	"file" : "index.html",
 	"general" : 
 	{
@@ -13,6 +13,22 @@
 				"text" : "OpenWeather API Key (optional)",
 				"type" : "textinput",
 				"value" : ""
+			},
+			"audio_eq" : 
+			{
+				"index" : 5,
+				"order" : 105,
+				"text" : "enable/disable audio equalizer visual",
+				"type" : "bool",
+				"value" : true
+			},
+			"change_bg" : 
+			{
+				"index" : 6,
+				"order" : 106,
+				"text" : "Check/Uncheck box to cycle background image",
+				"type" : "bool",
+				"value" : false
 			},
 			"city_name" : 
 			{
@@ -74,18 +90,9 @@
 				"text" : "Temperature Units",
 				"type" : "combo",
 				"value" : 1
-			},
-			"change_bg": {
-                "text": "Check/Uncheck box to cycle background image",
-                "type": "bool",
-                "value": false
-            },
-			"audio_eq": {
-				"text": "enable/disable audio equalizer visual",
-				"type": "bool",
-				"value": true
 			}
-		}
+		},
+		"supportsaudioprocessing" : true
 	},
 	"preview" : "preview.jpg",
 	"ratingsex" : "none",
@@ -93,9 +100,9 @@
 	"snapshotformat" : -1,
 	"snapshotoverlay" : "",
 	"tags" : [ "Game" ],
-	"title" : "Control Game Theme",
-	"type" : "web",
-	"version" : 2,
+	"title" : "Control Game AIO | Clock, Weather & Audio Visualization",
+	"type" : "Web",
+	"version" : 4,
 	"visibility" : "public",
 	"workshopid" : "3206278564",
 	"workshopurl" : "steam://url/CommunityFilePage/3206278564"
