@@ -1,0 +1,64 @@
+<DOCTYPE !html>
+<head>
+	<title>Control Panel</title>
+	<link rel="stylesheet" href="assets/css/stylesheet.css">
+	<link rel="stylesheet" href="assets/css/search.css">
+	<link rel="icon" type="image/png" href="icon128.png"/>
+	
+
+
+	<script type="text/javascript"> 
+		
+		var imageCount = 46;
+		
+		function ChangeIt() 
+		{
+		var num = Math.ceil( Math.random() * imageCount );
+		document.body.background = 'assets/img/'+num+'.jpg';
+		document.body.style.backgroundSize = "cover";// Background repeat
+		document.body.style.backgroundimage
+		}
+	</script>
+
+</head>
+<body>
+
+	<div id="particles-js" class="background"></div>
+	<div class="content_class">
+		<div class="timeblock">
+			<div class="timeinner pt-3">
+				<h1 id="time" style="float: right">
+					<small id="wtext"></small>
+					<div id = "city-form">
+						<div type="text" id = "city-input"></div>
+					</div>
+					<div id="time-title"></div>
+					<small id="time-subtitle"></small>
+					<br>
+					<canvas id="canvas"></canvas>
+				</h1>
+				
+			</div>
+		</div>
+
+	</div>
+	
+
+	
+	
+
+</body>
+
+<script type="text/javascript"> 
+	ChangeIt();
+</script> 
+
+<script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="assets/js/createjs.js"></script>
+<script type="text/javascript" src="assets/js/config.js"></script>
+<script type="text/javascript" src="assets/js/particles.min.js"></script>
+<script type="text/javascript" src="assets/js/custom.js"></script>
+<script type="text/javascript" src="assets/js/audio.js"></script>
+
+</html>
+

@@ -1,0 +1,102 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "Lightweight wallpaper inspired by the title cards from Remedy's game Control. Background is randomly chosen from a set of my in-game screenshots and standard 4k background images, 22 in total.\n\nFeatures:\n* 12/24 hour display choice\n* Time and Date\n* Weather and Temp\n\n(Changes based on city/country choice. Default is New York, US)\n\nOpenWeather API key is not required but recommended.",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"api_key" : 
+			{
+				"index" : 0,
+				"order" : 100,
+				"text" : "OpenWeather API Key (optional)",
+				"type" : "textinput",
+				"value" : ""
+			},
+			"city_name" : 
+			{
+				"index" : 1,
+				"order" : 101,
+				"text" : "City Name",
+				"type" : "textinput",
+				"value" : "New York"
+			},
+			"clock_type" : 
+			{
+				"index" : 2,
+				"options" : 
+				[
+					{
+						"label" : "12hr",
+						"value" : 1
+					},
+					{
+						"label" : "24hr",
+						"value" : 2
+					}
+				],
+				"order" : 102,
+				"text" : "Clock Type",
+				"type" : "combo",
+				"value" : 1
+			},
+			"country_code" : 
+			{
+				"index" : 3,
+				"order" : 103,
+				"text" : "Two Letter Country Code",
+				"type" : "textinput",
+				"value" : "us"
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"units_temp" : 
+			{
+				"index" : 4,
+				"options" : 
+				[
+					{
+						"label" : "Farenheit",
+						"value" : 1
+					},
+					{
+						"label" : "Celcius",
+						"value" : 2
+					}
+				],
+				"order" : 104,
+				"text" : "Temperature Units",
+				"type" : "combo",
+				"value" : 1
+			},
+			"change_bg": {
+                "text": "Check/Uncheck box to cycle background image",
+                "type": "bool",
+                "value": false
+            },
+			"audio_eq": {
+				"text": "enable/disable audio equalizer visual",
+				"type": "bool",
+				"value": true
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"ratingsex" : "none",
+	"ratingviolence" : "none",
+	"snapshotformat" : -1,
+	"snapshotoverlay" : "",
+	"tags" : [ "Game" ],
+	"title" : "Control Game Theme",
+	"type" : "web",
+	"version" : 2,
+	"visibility" : "public",
+	"workshopid" : "3206278564",
+	"workshopurl" : "steam://url/CommunityFilePage/3206278564"
+}
